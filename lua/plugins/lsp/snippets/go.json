@@ -1,0 +1,71 @@
+{
+  "multiple imports": {
+    "prefix": "ims",
+    "body": "import (\n\t\"${1:package}\"\n)",
+    "description": "Snippet for a import block"
+  },
+  "function": {
+    "prefix": "fn",
+    "body": "func ${1:fname}() {\n\t$0\n}",
+    "description": "Snippet for function declaration"
+  },
+  "method": {
+    "prefix": "fm",
+    "body": "func ($1) ${2:method}() {\n\t$0\n}",
+    "description": "Snippet for method declaration"
+  },
+  "struct": {
+    "prefix": "ts",
+    "body": "type ${1:name} struct {\n\t$2\n}$0",
+    "description": "Snippet struct a variable"
+  },
+  "interface": {
+    "prefix": "tf",
+    "body": "type ${1:name} interface {\n\t$2\n}$0",
+    "description": "Snippet struct a variable"
+  },
+  "switch statement": {
+    "prefix": "switch",
+    "body": "switch ${1:expression} {\ncase ${2:condition}:\n\t$0\n}",
+    "description": "Snippet for switch statement"
+  },
+  "select statement": {
+    "prefix": "sel",
+    "body": "select {\ncase ${1:condition}:\n\t$0\n}",
+    "description": "Snippet for select statement"
+  },
+  "for statement": {
+    "prefix": "for",
+    "body": "for${1} {\n\t$0\n}",
+    "description": "Snippet for a pure for loop"
+  },
+  "for n statement": {
+    "prefix": "fori",
+    "body": "for ${1:i} := 0; $1 < ${2:count}; i++ {\n\t$0\n}",
+    "description": "Snippet for a for loop"
+  },
+  "if statement": {
+    "prefix": "if",
+    "body": "if ${1:condition} {\n\t$0\n}",
+    "description": "Snippet for if statement"
+  },
+  "else branch": {
+    "prefix": "el",
+    "body": "else {\n\t$0\n}",
+    "description": "Snippet for else branch"
+  },
+  "json tag": {
+	"prefix": "json",
+	"body": "`json:\"$1\"`",
+	"description": "Snippet for struct json tag"
+  },
+  "eq": {
+	"prefix": ":",
+	"body": ":= ${0}"
+  },
+  "todo": {
+	"prefix": "todo",
+	"body": "// TODO: $1 <$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE>",
+	"description": "todo"
+  }
+}
